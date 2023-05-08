@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "CuYBURDe6iJTZ3rcsGt1gBPuePYw+jpaTSFqupIu6+o=",
+  "Source": "LayOut_ViewStart",
+  "BasePath": "_content/LayOut_ViewStart",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "LayOut_ViewStart\\wwwroot",
+      "Source": "LayOut_ViewStart",
+      "ContentRoot": "C:\\Users\\555\\OneDrive\\Masaüstü\\LayOut_ViewStart\\LayOut_ViewStart\\wwwroot\\",
+      "BasePath": "_content/LayOut_ViewStart",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\555\\OneDrive\\Masaüstü\\LayOut_ViewStart\\LayOut_ViewStart\\wwwroot\\Css\\mai.css",
+      "SourceId": "LayOut_ViewStart",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\555\\OneDrive\\Masaüstü\\LayOut_ViewStart\\LayOut_ViewStart\\wwwroot\\",
+      "BasePath": "_content/LayOut_ViewStart",
+      "RelativePath": "Css/mai.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Css\\mai.css"
+    }
+  ]
+}

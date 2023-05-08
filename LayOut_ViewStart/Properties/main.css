@@ -1,0 +1,266 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.ul .li {
+    list-style: none;
+    display: inline;
+}
+
+.f-left {
+    float: left;
+}
+
+.f-right {
+    float: right;
+}
+
+.width {
+    width: 100%;
+    height: 8vh;
+    background-color: white;
+    padding: 20px 0 0 0;
+}
+
+.kvadrat {
+    width: 80%;
+    height: 100%;
+    background-color: white;
+    margin: 0 auto;
+}
+
+.padding {
+    padding: 0 50px 0 0;
+}
+
+.section {
+    width: 100%;
+    height: 50vh;
+    background-color: white;
+    text-align: center;
+}
+
+.new-section {
+    width: 80%;
+    height: 100%;
+    background-color: white;
+    margin: 0 auto;
+}
+
+.white {
+    color: white;
+}
+
+.btn {
+    width: 125px;
+    height: 47px;
+    border: none;
+    background-color: #ccadad;
+    border-radius: 0.25rem;
+}
+
+.pad {
+    padding: 100px 0 0 0;
+}
+
+.section-1 {
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+}
+
+.new-section-1 {
+    width: 80%;
+    height: 100%;
+    background-color: white;
+    margin: 0 auto;
+}
+
+.img {
+    width: 305.52px;
+    height: 432px;
+}
+
+.marg-img {
+    margin: 100px 0 0 0;
+}
+
+.marg-btn {
+    margin: 30px 0 0 0;
+}
+
+.img-right {
+    margin: 0 0 0 50px;
+}
+
+.section-2 {
+    width: 100%;
+    height: 60vh;
+    background-color: white;
+}
+
+.new-section-2 {
+    width: 80%;
+    height: 100%;
+    background-color: white;
+    margin: 0 auto;
+}
+
+.yazi {
+    width: 6cm;
+    height: 5cm;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+}
+
+.yaz {
+    width: 8cm;
+    height: 6cm;
+}
+
+.section-3 {
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+}
+
+.new-section-3 {
+    width: 80%;
+    height: 100%;
+    background-color: white;
+    margin: 0 auto;
+}
+
+.img-1 {
+    width: 467.64px;
+    height: 524.39px;
+}
+
+.section-4 {
+    width: 100%;
+    height: 80vh;
+    background-color: white;
+}
+
+.new-section-4 {
+    width: 80%;
+    height: 100%;
+    background-color: white;
+    margin: 0 auto;
+    text-align: center;
+}
+
+img-4 {
+    width: 155.95;
+    height: 185.97;
+}
+
+.img-right-4 {
+    margin: 0 0 0 30px;
+}
+
+.center {
+    text-align: center;
+}
+
+.footer {
+    width: 100%;
+    height: 60vh;
+    background-color: white;
+}
+
+.end {
+    width: 80%;
+    background-color: white;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.input {
+    width: 419.64px;
+    height: 48px;
+    margin: 0 0 0 50px;
+    background-color: #e3e3e3;
+    border: none;
+}
+
+.input-son {
+    width: 419.64px;
+    height: 48px;
+    border: none;
+    background-color: #e3e3e3;
+}
+
+.icon {
+    width: 8cm;
+    height: 8cm;
+    background-color: white;
+}
+
+.size {
+    font-size: 30px;
+}
+
+.input-1 {
+    width: 419.64px;
+    height: 100px;
+    margin: 0 0 0 50px;
+}
+
+.input-marg {
+    margin: 30px 0 0 50px;
+    background-color: #e3e3e3;
+}
+
+.sect {
+    width: 100%;
+    height: 70vh;
+    background-color: white;
+}
+
+.sect-1 {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    margin: 0 auto;
+}
+
+.img-sect {
+    width: 100%;
+    height: 12cm;
+}
+
+.son {
+    width: 100%;
+    height: 50vh;
+    background-color: white;
+}
+
+.son-1 {
+    width: 80%;
+    height: 100%;
+    background-color: white;
+    margin: 0 auto;
+}
+
+.padding-1 {
+    padding: 0 0 0 100px;
+}
+
+.size-icon {
+    font-size: 20px;
+    margin: 0 0 0 30px;
+}
+
+.black {
+    color: black;
+}
+
+.size-i {
+    font-size: 20px;
+}
