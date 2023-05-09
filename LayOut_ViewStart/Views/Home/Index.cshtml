@@ -1,4 +1,60 @@
-﻿
+﻿@using System.Data;
+@using System.Data.SqlClient;
+
+
+
+@{
+    string ConnectionString = "Server=DESKTOP-OV988OJ\\SAHIN;Database=StudentInformation; Trusted_Connection=True;";
+
+    async void InsertStudent(string FULLName, string EmailAdress, string IdentNO, string BirthDay)
+    {
+        using (SqlConnection conn = new SqlConnection(ConnectionString))
+        {
+            conn.Open();
+            string commandtext = "INSERT INTO StudentEduAzINform values(@FULLName,@EmailAdress,@IdentNO,@BirthDay)";
+            using (SqlCommand cmd = new SqlCommand(commandtext, conn))
+            {
+                SqlParameter[] parms = new SqlParameter[]
+                {
+                CreateSqlparametr("FULLName",SqlDbType.NVarChar,FULLName),
+                CreateSqlparametr1("EmailAdress",SqlDbType.VarChar,EmailAdress),
+                CreateSqlparametr2("IdentNO",SqlDbType.NVarChar,IdentNO),
+                CreateSqlparametr3("BirthDay",SqlDbType.NVarChar,BirthDay),
+
+                };
+            }
+
+        }
+    }
+
+    SqlParameter CreateSqlparametr(string name, SqlDbType sqlDbType, object newObj)
+    {
+        SqlParameter sqlParameter = new SqlParameter(name, sqlDbType);
+        sqlParameter.Value = newObj;
+        return sqlParameter;
+    }
+    SqlParameter CreateSqlparametr1(string name, SqlDbType sqlDbType, object newObj1)
+    {
+        SqlParameter sqlParameter = new SqlParameter(name, sqlDbType);
+        sqlParameter.Value = newObj1;
+        return sqlParameter;
+    }
+    SqlParameter CreateSqlparametr2(string name, SqlDbType sqlDbType, object newObj2)
+    {
+        SqlParameter sqlParameter = new SqlParameter(name, sqlDbType);
+        sqlParameter.Value = newObj2;
+        return sqlParameter;
+    }
+    SqlParameter CreateSqlparametr3(string name, SqlDbType sqlDbType, object newObj3)
+    {
+        SqlParameter sqlParameter = new SqlParameter(name, sqlDbType);
+        sqlParameter.Value = newObj3;
+        return sqlParameter;
+    }
+
+
+}
+
  <body>
     <div class="w-100   container">
         <div class="d-flex justify-content-between mt-5"> <br> <br> <br> <br> <br>
@@ -45,15 +101,16 @@
                 <h1 class=""><b>Şagirdlər üçün <br> qeydiyyat </b></h1>
 
                 <div class="w-100">
+                    <div class=" stud-qeyd">
                     <p class="text-cl"><b>Şagirdin Adi ve Soyadi <span class="text-danger">*</span></b> </p>
-                    <input placeholder="Adi ve Soyadi" class="input-student" type="text"> <br>
+                    <input placeholder="Adi ve Soyadi" class="input-student inp-FullName" type="text"> <br>
                     <p class="text-cl"><b>Email adress <span class="text-danger">*</span></b></p>
-                    <input placeholder="Email adress" class="input-student" type="text">
-                    <div class="d-none stud-qeyd">
+                    <input placeholder="Email adress" class="input-student inp-Email" type="text">
+                    
                         <p class="text-cl"><b>Şagirdin fərdi identifikasiya nömrəsi (FİN) / UTIS ID <span class="text-danger">*</span></b> </p>
-                        <input placeholder="(FİN) / UTIS ID " class="input-student" type="text">
+                        <input placeholder="(FİN) / UTIS ID " class="input-student inp-Fin" type="text">
                         <p class="text-cl"><b>Şagirdin Dogum Tarixi <span class="text-danger">*</span></b></p>
-                        <input placeholder="Dogum Tarixi" class="input-student" type="text">
+                        <input placeholder="Dogum Tarixi" class="input-student inp-Time" type="text">
                     </div>
                     <div class="d-flex justify-content-between pt-2">
                         <p><b>SIfreni Berpa Et</b></p>
@@ -69,32 +126,7 @@
             </div>
         </div> 
 
-        <!-- Teacher  Information -->
 
-        <div class="d-flex  justify-content-between mt-80 ">
-      <div>
-
-                <img src="https://virtual.edu.az/images/muellim_banner.svg" alt="">
-            </div>
-
-            <div>
-                <h1><b>Muellimler ucun <br> qeydiyyat </b></h1>
-
-                <div class="w-100 ">
-                    <p class="text-cl"><b>Şagirdin fərdi identifikasiya nömrəsi (FİN) / UTIS ID <span class="text-danger">*</span></b> </p>
-                    <input placeholder="Fin/UTISID" class="input-student" type="text"> <br>
-                    <p class="text-cl"><b>Şagirdin Dogum Tarixi <span class="text-danger">*</span></b></p>
-                    <input placeholder="Dogum Tarixi" class="input-student" type="text">
-                    <div class="d-flex justify-content-between pt-2">
-                        <p><b>SIfreni Berpa Et</b></p>
-                        <button  class="btn-student ">Davam Et</button>
-
-                    </div>
-                </div>
-            </div>
-
-
-        </div>
         <!-- Teacher  Information -->
 
         <div class="d-flex  justify-content-between mt-80 ">
@@ -148,11 +180,27 @@
         <script>
         const btnStudent=document.querySelector('.btn-student')
         const StudQeyd=document.querySelector('.stud-qeyd')
+        const Inpstud=document.querySelector('.input-student')
+        const InpName=document.querySelector('.inp-FullName')
+
+        const InpEmail=document.querySelector('.inp-Email')
+
+        const InpFin=document.querySelector('.inp-Fin')
+        const InpTime=document.querySelector('.inp-Time')
+
+
 
         btnStudent.addEventListener("click",function () {
-
-            StudQeyd.classList.remove('d-none')
-
+            
+           @(default)ConnectionString.innerHTML+=
+           `
+        @*@(ConnectionString)InsertStudent("ss","ss","ss","sd");*@
+           
+           `
+            InpName.value="@CreateSqlparametr"
+            InpEmail.value="@CreateSqlparametr1"
+            InpFin.value="@CreateSqlparametr2"
+            InpTime.value="@CreateSqlparametr3"
         })
     </script>
 

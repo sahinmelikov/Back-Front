@@ -243,3 +243,9 @@ C:\Users\555\OneDrive\Masaüstü\LayOut_ViewStart\LayOut_ViewStart\obj\Debug\net
 C:\Users\555\OneDrive\Masaüstü\LayOut_ViewStart\LayOut_ViewStart\obj\Debug\net6.0\LayOut_ViewStart.RazorAssemblyInfo.cache
 C:\Users\555\OneDrive\Masaüstü\LayOut_ViewStart\LayOut_ViewStart\obj\Debug\net6.0\LayOut_ViewStart.RazorAssemblyInfo.cs
 C:\Users\555\OneDrive\Masaüstü\LayOut_ViewStart\LayOut_ViewStart\bin\Debug\net6.0\LayOut_ViewStart.staticwebassets.runtime.json
+C:\Users\555\OneDrive\Masaüstü\LayOut_ViewStart\LayOut_ViewStart\bin\Debug\net6.0\System.Data.SqlClient.dll
+C:\Users\555\OneDrive\Masaüstü\LayOut_ViewStart\LayOut_ViewStart\bin\Debug\net6.0\runtimes\win-arm64\native\sni.dll
+C:\Users\555\OneDrive\Masaüstü\LayOut_ViewStart\LayOut_ViewStart\bin\Debug\net6.0\runtimes\win-x64\native\sni.dll
+C:\Users\555\OneDrive\Masaüstü\LayOut_ViewStart\LayOut_ViewStart\bin\Debug\net6.0\runtimes\win-x86\native\sni.dll
+C:\Users\555\OneDrive\Masaüstü\LayOut_ViewStart\LayOut_ViewStart\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\555\OneDrive\Masaüstü\LayOut_ViewStart\LayOut_ViewStart\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
